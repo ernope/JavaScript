@@ -10,5 +10,5 @@ function kuvaA(){
 function kuvaB(){
     document.getElementById('target').src = 'img/picB.jpg';
 }
-button.addEventListener('mouseover', kuvaA);
-button.addEventListener('mouseout', kuvaB);
+document.getElementById('trigger').addEventListener('mouseover', kuvaA);
+document.getElementById('trigger').addEventListener('mouseout', kuvaB);
