@@ -4,11 +4,11 @@
 // <img id="target"> form picA.jpg to picB.jpg
 //when user mouses off, change the picture back to original
 
-function avaa(){
+function kuvaA(){
     document.getElementById('target').src = 'img/picA.jpg';
 }
-function sulje(){
+function kuvaB(){
     document.getElementById('target').src = 'img/picB.jpg';
 }
-button.addEventListener('mouseover', avaa);
-button.addEventListener('mouseout', sulje);
+button.addEventListener('mouseover', kuvaA);
+button.addEventListener('mouseout', kuvaB);
