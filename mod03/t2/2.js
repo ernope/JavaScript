@@ -9,19 +9,21 @@
     resultsElm.append(ulElem);
     {
         const liElem = document.createElement('li');
+        document.querySelector('#target').appendChild(liElem)
         liElem.innerText = 'First item';
-        ulElem.append(liElem);
+
     }
     {
         document.getElementById('target');
-        const liElem = document.createElement('li');
-        document.querySelector('#target').classList.toggle('my-list');
-        liElem.innerText = 'Second item';
-        ulElem.append(liElem);
+        const liElem2 = document.createElement('li');
+        document.querySelector('#target').appendChild(liElem2).classList.toggle('my-item');
+        liElem2.innerText = 'Second item';
+
     }
     {
         const liElem = document.createElement('li');
+        document.querySelector('#target').appendChild(liElem)
         liElem.innerText = 'Third item';
-        ulElem.append(liElem);
+
     }
 }
